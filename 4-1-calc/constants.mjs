@@ -1,0 +1,1 @@
+export const actions = ['add', 'mult', 'divide', 'minus']
