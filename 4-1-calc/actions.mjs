@@ -1,15 +1,11 @@
-export function add(a, b) {
-  return Number(a) + Number(b);
-}
-
-export function mult(a, b) {
-  return Number(a) * Number(b);
-}
-
-export function minus(a, b) {
-  return Number(a) - Number(b);
-}
-
-export function divide(a, b) {
-  return Number(a) / Number(b);
-}
+export const calc = {
+  add: (a, b) => a + b,
+  mult: (a, b) => a * b,
+  minus: (a, b) => a - b,
+  divide: (a, b) => {
+    if (Number(b) === 0) {
+      throw new Error('На ноль делить нельзя');
+    }
+    return a / b;
+  },
+};
