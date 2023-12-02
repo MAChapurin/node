@@ -12,3 +12,5 @@ function isDivideOnThreeCountFn({array}) {
 
 parentPort.postMessage(isDivideOnThreeCountFn(workerData))
 
+module.exports = {isDivideOnThreeCountFn}
+

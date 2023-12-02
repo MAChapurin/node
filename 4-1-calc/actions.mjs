@@ -3,7 +3,7 @@ export const calc = {
   mult: (a, b) => a * b,
   minus: (a, b) => a - b,
   divide: (a, b) => {
-    if (Number(b) === 0) {
+    if (b === 0) {
       throw new Error('На ноль делить нельзя');
     }
     return a / b;
